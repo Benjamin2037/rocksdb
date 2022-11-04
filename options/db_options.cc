@@ -725,7 +725,7 @@ ImmutableDBOptions::ImmutableDBOptions(const DBOptions& options)
       fail_if_options_file_error(options.fail_if_options_file_error),
       dump_malloc_stats(options.dump_malloc_stats),
       avoid_flush_during_recovery(options.avoid_flush_during_recovery),
-      allow_ingest_behind(options.allow_ingest_behind),
+      allow_ingest_behind(true),
       two_write_queues(options.two_write_queues),
       manual_wal_flush(options.manual_wal_flush),
       atomic_flush(options.atomic_flush),

@@ -1236,7 +1236,7 @@ struct DBOptions {
   //
   // DEFAULT: false
   // Immutable.
-  bool allow_ingest_behind = false;
+  bool allow_ingest_behind = true;
 
   // If enabled it uses two queues for writes, one for the ones with
   // disable_memtable and one for the ones that also write to memtable. This
